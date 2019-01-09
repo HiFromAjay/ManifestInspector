@@ -1,5 +1,5 @@
 # ManifestInspector
-A rule-based static analysis tool for detecting developer mistakes in android manifest file.
+A rule-based static analysis tool for detecting developer mistakes in android manifest files.
 
 
 # Tool Use Guide
