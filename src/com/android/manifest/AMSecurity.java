@@ -314,7 +314,12 @@ public class AMSecurity {
 		Element elem = (Element) sdk.item(0);
 		
 		boolean allExported = false;
-		int minSdk = Integer.parseInt(elem.getAttribute("android:minSdkVersion"));
+		int minSdk = 0;
+		if(elem.getAttribute("android:minSdkVersion").equals("")){
+			minSdk = 1;
+		}else{
+			minSdk = Integer.parseInt(elem.getAttribute("android:minSdkVersion"));
+		}
 		if(minSdk<17){
 			allExported = true;
 		}
